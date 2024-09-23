@@ -1,0 +1,12 @@
+@define-color f-level-bgcolor transparent/*#728055*/;
+@define-color s-level-bgcolor transparent/*#4c5638*/;
+@define-color t-level-bgcolor transparent/*#3b432e*/;
+@define-color block-global rgba(62, 62, 62, 1);
+@define-color block-left @block-global;
+@define-color block-center @block-global;
+@define-color block-right @block-global;
+@define-color warning-color #ff6352;
+@define-color text-color #fff;
+@define-color text-subcolor #bebebe;
+@define-color all-borders-color rgba(255, 255, 255, 0.15);
+@define-color block-global-borders @all-borders-color;

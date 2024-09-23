@@ -1,0 +1,79 @@
+configuration {
+  location:                       0;
+}
+
+window {
+  width:                          17%;
+  height:                         50%;
+  border:                         0px;
+  border-colot:                   #00000000;
+  background-color:               #00000000;
+  padding:                        0px;
+  transparency:                   'real';
+}
+
+element {
+  orientation:                    horizontal;
+  children:                       [ element-icon, element-text ];
+  spacing:                        5px;
+  border-radius:                  5px;
+  padding:                        3px;
+  margin:                         0px 0px;
+  background-color:               rgba(255, 255, 255, 0.0); /* Цвет фона для обычных элементов */
+}
+
+element normal.normal, element.alternate.normal {
+  background-color:               #ffffff00;
+}
+
+inputbar, entry, prompt, message, textbox {
+  text-color:                     #ffffff;
+}
+
+element-icon {
+  size:                           16px;
+  margin:                         1px;
+}
+
+element-text{
+  vertical-align:                 0.5;
+  font-size:                      0.2em;
+  text-color:                     #ffffff4d;
+}
+
+element-text.selected.normal{
+  text-color:                     #ffffff;
+}
+
+/* Цвет фона для выделенных элементов */
+element.selected.normal{
+  background-color:               rgba(62, 62, 62, 1); /* Цвет фона для выделенных элементов */
+  text-color:                     #000000; /* Цвет текста для выделенных элементов */
+}
+
+listview{
+  scrollbar:                      false;
+  padding:                        2px 2px 0px 2px;
+  border:                         2px;
+  border-color:                   rgba(255, 255, 255, 0.1);
+  border-radius:                  3px;
+  background-color:               rgba(62, 62, 62, 1);
+}
+
+inputbar {
+  padding:                        7px 5px;
+  margin:                         0px 0px 5px 0px;
+  border:                         2px;
+  border-color:                   rgba(255, 255, 255, 0.1);
+  border-radius:                  3px;
+  background-color:               rgba(62, 62, 62, 1);
+}
+
+mainbox {
+  margin:                         0px;
+  padding:                        2px;
+  border-color:                   rgba(255, 255, 255, 0.1);
+  background-color:               rgba(0, 0, 0, 0.3);
+  border-radius:                  5px;
+  border:                         1px;
+}

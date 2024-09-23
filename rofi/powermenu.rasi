@@ -1,0 +1,70 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+  background: rgba(0,0,0,0.3);
+  background-alt: #282a36;  
+  line: rgba(255, 255, 255, 0.1); 
+  foreground: #f8f8f2;  
+  foreground-alt: #f8f8f2;  
+  Comment: #6272a4; 
+  selected: #ffffff;
+  Pink: #ff79c6;    
+  Purple: #bd93f9;
+  background-color: @background;
+  text-color: @purple;
+}
+ 
+configuration {
+    location:                       0;
+}
+
+window {
+    background-color:               @background;
+    border:                         1px;
+    border-color:                   @line;
+    border-radius:                  5px;
+    width:                          123px;
+}
+ 
+listview {
+    background-color:               transparent;
+    columns:                        1;
+    lines:                          4;
+    spacing:                        10px;
+    layout:                         horizontal;
+    background-color:               rgba(62, 62, 62, 1);
+    border:                         1px;
+    border-color:                   @line;
+    border-radius:                  3px;
+}
+ 
+mainbox {
+    children:                       [ listview ];
+    padding:                        2px;
+}
+ 
+element {
+    background-color:               transparent;
+    text-color:                     #ffffff4d;
+    children: [ element-text ];
+    orientation:                    horizontal;
+    border-radius:                  3px;
+    padding:                        1px;
+    width:                          21px;
+    height:                         21px;
+}
+ 
+element-text {
+    background-color:               inherit;
+    text-color:                     inherit;
+    font:                           "Font Awesome 6 Free 8";
+    horizontal-align: 0.5;
+    margin:                         2px;
+}
+ 
+element selected {
+    text-color:                     @selected;
+    /*border-radius:                  100%;*/
+}
